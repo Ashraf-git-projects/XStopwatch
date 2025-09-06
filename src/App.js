@@ -32,13 +32,14 @@ function App() {
   }
 
   return (
-    <div className="App">
-      <h1>Stopwatch</h1>
-      <h4>Time:{formatTime(elapsedTime)}</h4>
-      <button onClick={startStop} >{isRunning ? "Stop" : "Start"}</button>
-      <button onClick={reset}>Reset</button>
-    </div>
-  );
+    
+  <div className="App">
+    <h1>Stopwatch</h1>
+    <h4>Time: {formatTime(elapsedTime)}</h4>
+    <button onClick={startStop}>{isRunning ? "Stop" : "Start"}</button>
+    <button onClick={reset}>Reset</button>
+  </div>
+);
 }
 
 export default App;
